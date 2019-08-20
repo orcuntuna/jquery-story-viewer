@@ -1,0 +1,118 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.storyList{
+    display: flex;
+    justify-content: start;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+    overflow-x: auto;
+}
+
+.storyList .storyItem{
+    margin-right: 10px;
+}
+
+.storyList .storyItem .storyColor{
+    background: #05c46b;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storyList .watched .storyColor{
+    background: #aaa;
+}
+
+.storyList .storyItem .storyColor img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.storyShowBox{
+    background: #111;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.storyShowBox .storyShowItem{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/story/1.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.storyShowBox .storyShowItem .storyHeader{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-top: 5px;
+    font-size: 0.85rem;
+    align-items: center;
+    z-index: 20;
+}
+
+.storyShowBox .storyShowItem .storyNavigation{
+    display: flex;
+    flex: 1;
+}
+
+.storyShowBox .storyShowItem .storyNavigation .leftNavigation{
+    flex: 1;
+}
+
+.storyShowBox .storyShowItem .storyNavigation .rightNavigation{
+    flex: 2;
+}
+
+.storyShowBox .storyHeader img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.storyShowBox .storyHeader .name{
+    margin-left: 12px;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.storyShowBox .storyHeader .time{
+    color: #ccc;
+}
+
+.storyShowBox .storyProgressBar{
+    height: 10px;
+    margin-top: 10px;
+    display: flex;
+    padding: 0px 17px;
+}
+
+.storyShowBox .storyProgressBar .progressBarOut{
+    flex: 1;
+    height: 3px;
+    background: #aaa;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+
+.storyShowBox .storyProgressBar .progressBarOut .progressBarIn{
+    background: #fff;
+    width: 0;
+    height: 3px;
+}
