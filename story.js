@@ -1,45 +1,3 @@
-var data = [
-    {
-        id: 1,
-        name: "tunaorcun",
-        profile_picture: "images/profile/1.jpg",
-        stories: [
-            {
-                image: "images/story/1.jpg",
-                time: "2s",
-                watched: false
-            },
-            {
-                image: "images/story/3.jpg",
-                time: "2s",
-                watched: false
-            },
-            {
-                image: "images/story/4.jpg",
-                time: "2s",
-                watched: false
-            },
-            {
-                image: "images/story/5.jpg",
-                time: "2s",
-                watched: false
-            },
-        ]
-    },
-    {
-        id: 2,
-        name: "ronaldo",
-        profile_picture: "images/profile/2.jpg",
-        stories: [
-            {
-                image: "images/story/2.jpg",
-                time: "9s",
-                watched: false
-            }
-        ]
-    },
-];
-
 var config = {
     wait_time : 8,
     current_index : -1,
@@ -122,6 +80,7 @@ function openStory(index, selected_story_index = null){
             $(progressList[p]).find(".progressBarIn").css("width", "100%");
         }
     }
+    $("#storyShowBox .storyHeader .time").text(data[index].stories[story_index].time);
     startTimer(story_index);
 }
 

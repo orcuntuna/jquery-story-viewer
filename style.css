@@ -15,8 +15,12 @@ body{
     margin-right: 10px;
 }
 
+.storyList .storyItem:last-child{
+    padding-right: 15px;
+}
+
 .storyList .storyItem .storyColor{
-    background: #05c46b;
+    background: #006266;
     width: 64px;
     height: 64px;
     border-radius: 32px;
@@ -53,6 +57,7 @@ body{
     height: 100vh;
     background-image: url('images/story/1.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
 }
@@ -84,6 +89,11 @@ body{
     width: 32px;
     height: 32px;
     border-radius: 16px;
+}
+
+.storyShowBox .storyHeader a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .storyShowBox .storyHeader .name{
