@@ -13,6 +13,7 @@ Demo:
  - Profiller üzerinde sağa ve sola kaydırarak geçiş sağlanması.
  - Hikayeden çıkış yapmak için yukarıdan aşağı kaydırma hareketi veya ESC tuşu.
  - İzlenecek hikaye kalmadığında otomatik hikayelerin kapanması.
+ - Hikaye izlerken mevcut profil bağlantısı ile profile gidebilme.
 
 
 Hikayelerde bulunan profil resimleri ve hikayeler demo olarak eklenmiştir.
