@@ -46,6 +46,7 @@ function openStory(index, selected_story_index = null){
     config.timer = 0;
     $("#storyShowBox .storyHeader img").attr("src", data[index].profile_picture);
     $("#storyShowBox .storyHeader .name").text(data[index].name);
+    $("#storyShowBox .storyHeader a").attr("href", data[index].profil_url);
     $("#storyShowBox .storyProgressBar").html("");
     story_index = -1;
     for(var j=0;j<data[index].stories.length;j++){
