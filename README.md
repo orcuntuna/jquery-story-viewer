@@ -1,6 +1,7 @@
 # jQuery Story Viewer
 
 Demo:
+
 ![demo gif](https://github.com/orcuntuna/jquery-story/blob/master/demo.gif?raw=true)
 
 **Mevcut Özellikler:**
